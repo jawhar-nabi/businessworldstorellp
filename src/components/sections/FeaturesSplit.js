@@ -50,8 +50,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: 'Workflow that just works',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: 'Nos expertises',
+    paragraph: 'Notre équipe se compose de talents aux profils mixtes, tous basés dans nos bureaux à Paris. Attachés à la technique digitale et au bien-être au travail, toute l’équipe est enthousiaste à l’idée de s’investir pour des projets de grande envergure, ambitieux, et novateurs.'
   };
 
   return (
@@ -61,10 +61,50 @@ const FeaturesSplit = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
-          <div className={splitClasses}>
+          <SectionHeader data={sectionHeader} className="center-content reveal-from-bottom" />
+          <div className='tiles-wrap center-content'>
 
-            <div className="split-item">
+            <div className="tiles-item reveal-from-bottom"  >
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-content">
+                  <h2 className="mt-0 mb-8" style={{ fontWeight: '100', fontSize: '82px' }}>
+                    12
+                  </h2>
+                  <p className="m-0 text-sm" style={{ paddingTop: "40px" }}>
+                    TALENTS PARMI NOUS
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom"  >
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-content">
+                  <h2 className="mt-0 mb-8" style={{ fontWeight: '100', fontSize: '82px' }}>
+                    10
+                  </h2>
+                  <p className="m-0 text-sm" style={{ paddingTop: "40px" }}>
+                  ENTREPRISES ACCOMPAGNÉES
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom"  >
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-content">
+                  <h2 className="mt-0 mb-8" style={{ fontWeight: '100', fontSize: '82px' }}>
+                    27
+                  </h2>
+                  <p className="m-0 text-sm" style={{ paddingTop: "40px" }}>
+                    PROJETS CLOTURÉS
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            {/* <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Lightning fast workflow
@@ -140,7 +180,7 @@ const FeaturesSplit = ({
                   width={528}
                   height={396} />
               </div>
-            </div>
+            </div> */}
 
           </div>
         </div>
